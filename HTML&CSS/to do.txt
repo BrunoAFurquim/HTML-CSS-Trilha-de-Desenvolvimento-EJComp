@@ -1,0 +1,13 @@
+html:
+- h1, h2, h3...
+- p
+- a
+- img
+- ul, ol
+- forms 
+    - buttons
+    - inputs
+    - checkbox
+
+css
+- unidades de medida

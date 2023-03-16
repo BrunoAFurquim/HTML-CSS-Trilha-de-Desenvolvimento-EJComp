@@ -1,0 +1,153 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+html,
+body {
+  position: fixed;
+  width: 100%;
+  height: 100vh;
+  background: linear-gradient(
+    to bottom,
+    rgba(62, 34, 107, 42) 0%,
+    rgba(31, 29, 33, 13) 100%
+  );
+  display: grid;
+  grid-auto-rows: 1fr 3fr 1fr;
+}
+
+li,
+a {
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.2rem;
+  color: aliceblue;
+}
+
+header {
+  width: 100%;
+  height: 8vh;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0rem 3rem;
+}
+
+footer {
+  height: 8vh;
+}
+
+.nav-links {
+  list-style: none;
+}
+
+.nav-links li {
+  display: inline-block;
+  padding: 0rem 1.5rem;
+}
+
+.nav-links li a {
+  text-decoration: none;
+  transition: all 0.3s ease 0s;
+}
+
+.nav-links li a:hover {
+  color: #b18fe9;
+}
+
+.nav-links button {
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: black;
+  background: aliceblue;
+  border: none;
+  border-radius: 2rem;
+  padding: 0.5rem 1.5rem;
+  cursor: pointer;
+  transition: all 0.3s ease 0s;
+}
+
+.nav-links button:hover {
+  font-size: 1.3rem;
+  padding: 0.7rem 1.7rem;
+  box-shadow: 5px 5px 5px rgb(0, 0, 0);
+}
+
+.ejcomp {
+  cursor: pointer;
+}
+
+.content {
+  height: 84vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: aliceblue;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 100;
+}
+
+.content h1 {
+  position: relative;
+  font-size: 4rem;
+  text-align: center;
+  width: 90%;
+  max-width: 65rem;
+}
+
+.content p {
+  margin-top: 1.5rem;
+  font-size: 1.5rem;
+  width: 90%;
+  max-width: 50rem;
+  text-align: center;
+}
+
+.text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 35%;
+  widows: 100%;
+}
+
+.footer-content {
+  display: inline-flex;
+  position: absolute;
+  bottom: 0;
+  justify-content: left;
+  width: 100%;
+  padding: 1.5rem 0vh;
+}
+
+.footer-content svg {
+  margin: 0rem 4rem;
+  cursor: pointer;
+  min-width: 2rem;
+  min-height: 2rem;
+}
+
+.ejbranco {
+  opacity: 0.2;
+  height: auto;
+  width: auto;
+}
+
+.mobile-menu {
+  display: none;
+  cursor: pointer;
+}
+
+.mobile-menu div {
+  width: 32px;
+  height: 2px;
+  background-color: #fff;
+  margin: 8px;
+}
