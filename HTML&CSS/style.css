@@ -130,8 +130,8 @@ footer {
 .footer-content svg {
   margin: 0rem 4rem;
   cursor: pointer;
-  min-width: 2rem;
-  min-height: 2rem;
+  width: 2rem;
+  height: 2rem;
 }
 
 .ejbranco {
