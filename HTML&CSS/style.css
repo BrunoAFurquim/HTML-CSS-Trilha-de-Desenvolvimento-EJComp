@@ -1,14 +1,15 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
 
 * {
-  box-sizing: border-box;
+  box-sizing: border-box; /*basicamente muda o jeito que a gente calcula a altura e largura de um elemento */
   padding: 0;
   margin: 0;
+  font-family: "Montserrat", sans-serif;
+  color: aliceblue;
 }
 
 html,
 body {
-  position: fixed;
   width: 100%;
   height: 100vh;
   background: linear-gradient(
@@ -20,13 +21,6 @@ body {
   grid-auto-rows: 1fr 3fr 1fr;
 }
 
-li,
-a {
-  font-family: "Montserrat", sans-serif;
-  font-size: 1.2rem;
-  color: aliceblue;
-}
-
 header {
   width: 100%;
   height: 8vh;
@@ -34,6 +28,7 @@ header {
   justify-content: space-between;
   align-items: center;
   padding: 0rem 3rem;
+  font-size: 1.2rem;
 }
 
 footer {
@@ -59,7 +54,6 @@ footer {
 }
 
 .nav-links button {
-  font-family: "Montserrat", sans-serif;
   font-size: 1.2rem;
   font-weight: bold;
   color: black;
@@ -88,24 +82,6 @@ footer {
   justify-content: center;
   align-items: center;
   color: aliceblue;
-  font-family: "Montserrat", sans-serif;
-  font-weight: 100;
-}
-
-.content h1 {
-  position: relative;
-  font-size: 4rem;
-  text-align: center;
-  width: 90%;
-  max-width: 65rem;
-}
-
-.content p {
-  margin-top: 1.5rem;
-  font-size: 1.5rem;
-  width: 90%;
-  max-width: 50rem;
-  text-align: center;
 }
 
 .text {
@@ -115,7 +91,25 @@ footer {
   align-items: center;
   position: absolute;
   top: 35%;
-  widows: 100%;
+}
+
+.content h1 {
+  font-size: 4rem;
+  text-align: center;
+  width: 65rem;
+}
+
+.content p {
+  margin-top: 1.5rem;
+  font-size: 1.5rem;
+  width: 50rem;
+  text-align: center;
+}
+
+.ejbranco {
+  opacity: 0.2;
+  height: auto;
+  width: auto;
 }
 
 .footer-content {
@@ -132,22 +126,4 @@ footer {
   cursor: pointer;
   width: 2rem;
   height: 2rem;
-}
-
-.ejbranco {
-  opacity: 0.2;
-  height: auto;
-  width: auto;
-}
-
-.mobile-menu {
-  display: none;
-  cursor: pointer;
-}
-
-.mobile-menu div {
-  width: 32px;
-  height: 2px;
-  background-color: #fff;
-  margin: 8px;
 }
